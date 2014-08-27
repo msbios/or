@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ольга Решотка</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content='В каждом человеке я стараюсь увидеть что-то особенное, передать это через объектив своего фотоаппарата и отразить в фотографиях. Я не пытаюсь доказат всем, что я "не такая как все". Я просто делаю, как вижу.' />
+        <meta name="keywords" content="Оля Решотка, Ольга Решотка, Решотка, фотограф, фотограф Оля Решотка, фотограф Ольга Решотка, фотографии Ольги Решотки, фото Решотка, Решотка фотограф, фотографии Ольги Решотки, кенон, фотограф Ольга Решотка снимает на кенон, фото кенон Решотка, Левон Манвелян, ученица, фотографии, фотоаппарат, съемка, фотосесии, индивидуальные фотосессии, студия, сьемка на улице, съемка дома, контакты, галлерея, фотогаллерея, фото, красивые фотографии, фотосессия от Ольги Решотки, сайт Ольги Решотки, Сайт Оли Решотки, фотосет, Белая Церковь, фотосессия в Белой Церкви, Оля Решотка фотограф Белая Церковь, фотографии Белая Церковь, студийные фотосессии, обработка фотографий." />
+        <meta name="author" content="Judzhin Miles" />
+
+        <link rel="stylesheet" href="assets/stylesheets/screen.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="assets/stylesheets/common.css" type="text/css" media="screen, projection" />
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" href="assets/stylesheets/ie.css" type="text/css" media="screen, projection" />
+        <![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+
+        <script type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/jquery.common.js"></script>
+
+        <script type="text/javascript" src="assets/javascripts/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/jquery.kinetic.js"></script>
+        <script type="text/javascript" src="assets/javascripts/jquery.easing.1.3.js"></script>
+
+        <script id="previewTmpl" type="text/x-jquery-tmpl">
+        <div id="or-img-preview" class="or-preview">
+            <img src="${src}" alt="" class="or-preview-img"/>
+            <span class="or-preview-descr" style="display: none;">${description}</span>
+            <div class="or-nav" style="display: none;">
+                <span class="or-nav-prev">Previous</span>
+                <span class="or-nav-next">Next</span>
+            </div>
+            <span class="or-close" style="display: none;">Close Preview</span>
+            <div class="or-loading-large" style="display: none;">Loading...</div>
+        </div>		
+    </script>
+
+    <script id="contentTmpl" type="text/x-jquery-tmpl">	
+        <div id="or-content-preview" class="or-content-preview">
+            <div class="or-teaser" style="display: none;">{{html teaser}}</div>
+            <div class="or-content-full" style="display: none;">{{html content}}</div>
+            <span class="or-close" style="display: none;">Close Preview</span>
+        </div>
+    </script>
+
+    <noscript>
+    <style type="text/css">
+        .or-main a {
+            cursor: pointer;
+        }
+
+        .or-main-wrapper {
+            position: absolute;
+            top: 0px;
+            bottom: 24px;
+            overflow: scroll;
+        }
+    </style>
+    </noscript>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icons/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icons/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="assets/icons/favicon.png" />
+
+</head>
+
+<body>
+    <div id="copyright" class="copyright">
+        <span class="right_ab">
+            <a href="http://msbios.com/" target="_blank">Developer <strong>Judzhin Miles</strong></a>
+        </span>
+    </div>
+
+    <div id="or-top" class="or-top">
+        <h1>Ольга Решотка <span>фотограф</span></h1>
+    </div>
+
+    <div id="or-main-wrapper" class="or-main-wrapper">
+        <div class="or-main">
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#" class="or-content">
+                <div class="or-teaser">
+                    <h2>Welcome <span>Howdy, Stranger</span></h2>
+                </div>
+                <div class="or-content-full">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                </div>
+            </a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#" class="or-content">
+                <div class="or-teaser">
+                    <h2>Welcome <span>Howdy, Stranger</span></h2>
+                </div>
+                <div class="or-content-full">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                </div>
+            </a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <a href="#"><img src="uploads/thumbs/3.jpg" data-largesrc="uploads/large/3.jpg" alt="image03"/><span>КвиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/4.jpg" data-largesrc="uploads/large/4.jpg" alt="image01"/><span>Ещё квиточкО</span></a>
+            <a href="#"><img src="uploads/thumbs/5.jpg" data-largesrc="uploads/large/5.jpg" alt="image02"/><span>ДождикО</span></a>
+            <a href="#"><img src="uploads/thumbs/6.jpg" data-largesrc="uploads/large/6.jpg" alt="image02"/><span>ЯгодкО</span></a>
+            <a href="#"><img src="uploads/thumbs/7.jpg" data-largesrc="uploads/large/7.jpg" alt="image02"/><span>УлиткО</span></a>
+            <a href="#"><img src="uploads/thumbs/8.jpg" data-largesrc="uploads/large/8.jpg" alt="image02"/><span>ДомикО</span></a>
+            <a href="#"><img src="uploads/thumbs/9.jpg" data-largesrc="uploads/large/9.jpg" alt="image01"/><span>ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/10.jpg" data-largesrc="uploads/large/10.jpg" alt="image02"/><span>ЮджикО</span></a>
+            <a href="#"><img src="uploads/thumbs/11.jpg" data-largesrc="uploads/large/11.jpg" alt="image02"/><span>яЯ</span></a>
+            <a href="#"><img src="uploads/thumbs/12.jpg" data-largesrc="uploads/large/12.jpg" alt="image03"/><span>Опять ТанчикО</span></a>
+            <a href="#"><img src="uploads/thumbs/13.jpg" data-largesrc="uploads/large/13.jpg" alt="image03"/><span>БецикО</span></a>
+            <a href="#"><img src="uploads/thumbs/14.jpg" data-largesrc="uploads/large/14.jpg" alt="image03"/><span>СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/15.jpg" data-largesrc="uploads/large/15.jpg" alt="image03"/><span>ВерблюдикО</span></a>
+            <a href="#"><img src="uploads/thumbs/16.jpg" data-largesrc="uploads/large/16.jpg" alt="image03"/><span>Опять СанькО</span></a>
+            <a href="#"><img src="uploads/thumbs/1.jpg" data-largesrc="uploads/large/1.jpg" alt="image01"/><span>ЧайкО</span></a>
+            <a href="#"><img src="uploads/thumbs/2.jpg" data-largesrc="uploads/large/2.jpg" alt="image02"/><span>СосонкО</span></a>
+            <div class="clear"></div>
+        </div><!-- or-main -->
+    </div><!-- or-main-wrapper -->
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-40240409-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</body>
+</html>	
